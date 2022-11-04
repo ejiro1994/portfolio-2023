@@ -39,6 +39,7 @@ main {
   height: 100vh;
   width: 100vw;
   position: relative;
+  overflow-x: hidden;
 }
 .color {
   height: 1000px;
@@ -46,7 +47,7 @@ main {
   /* background-image: radial-gradient(closest-side, rgba(0, 195, 255, 0.21), rgba(0, 0, 0, 0)); */
   background-image: radial-gradient(
     closest-side,
-    rgba(0, 195, 255, 0.14),
+    rgba(255, 255, 255, 0.1),
     rgba(0, 0, 0, 0)
   );
 
