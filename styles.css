@@ -96,7 +96,7 @@ main {
   background-image: radial-gradient(
     farthest-corner at 20% -100%,
     #13131300 0%,
-    #131313 60%
+    #131313 55%
   );
   z-index: -2;
   position: absolute;

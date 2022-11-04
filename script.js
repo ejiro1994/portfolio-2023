@@ -22,7 +22,7 @@ t1.to('.overlay', {
   )
   .fromTo(
     ['.availContainer', '.goldDot'],
-    { y: 10, opacity: 0 },
+    { y: 10, opacity: 0 }, 
     { y: 0, opacity: 1, duration: 0.5, ease: 'power2.inOut' },
-   3
+   2.5
   )
