@@ -5,16 +5,34 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: silka-Regular;
+  src: url('./fonts/Silka-Regular.otf');
+}
+@font-face {
+  font-family: silka-Light;
+  src: url('./fonts/Silka-Light.otf');
+}
+@font-face {
+  font-family: Silka-ExtraLight;
+  src: url('./fonts/Silka-ExtraLight.otf');
+}
+@font-face {
+  font-family: Silka-SemiBold;
+  src: url('./fonts/Silka-SemiBold.otf');
+}
+
 body {
   background-color: #131313;
-  position: relative;
   overflow: hidden;
-  background-image: url(/grid.svg);
+  /* background-image: url(/grid.svg); */
+  color: #fff;
+  /* font-family: 'silka-Regular'; */
 }
 main {
   height: 100vh;
   width: 100vw;
-  background-image: url(/grid.svg);
+  position: relative;
 }
 .color {
   height: 1000px;
@@ -57,31 +75,143 @@ main {
   /* mix-blend-mode: normal; */
 }
 .grid {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  height: 50vh;
+  height: 550px;
   width: 100vw;
   z-index: -5;
+
+  fill: none;
+  stroke: #fff;
+  stroke-opacity: 0.4;
+  stroke-width: 1;
 }
 
 .cover {
-  width: 120vw;
-  height: 50vh;
+  width: 100vw;
+  height: 550px;
   background-image: radial-gradient(
-    farthest-corner at -90% 0%,
+    farthest-corner at 20% -100%,
     #13131300 0%,
     #131313 60%
   );
-  z-index: 2;
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .overlay {
   width: 100vw;
   height: 100vh;
   background: #131313;
-  z-index: 100;
+  z-index: 10000;
   top: 0;
   left: 0;
   position: absolute;
+}
+
+.goldDot {
+  height: 6px;
+  width: 6px;
+  top: 51px;
+  left: 27.5%;
+  z-index: 100;
+  background-image: url('/images/goldBall.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  border-radius: 30px;
+}
+
+.intro {
+  z-index: 10000;
+  font-family: Silka-ExtraLight;
+  font-size: 15px;
+}
+
+.jobTitle {
+  font-family: Silka-SemiBold;
+  font-size: 28px;
+
+
+}
+
+.headers {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+  flex-direction: column;
+  align-items: center; 
+  gap: 10px;
+
+}
+
+.location {
+  font-family: Silka-Light;
+  font-size: 24px;
+}
+
+.availContainer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+.availability {
+  font-family: Silka-ExtraLight;
+  font-size: 12px;
+  margin-top: 48px;
+  /* left: 30%; */
+  text-align: center;
+  /* display: inline; */
+  position: absolute;
+}
+.bar1,
+.bar2 {
+  width: 37px;
+  height: 4px;
+  background: #fff;
+  /* margin-top: 6px; */
+  z-index: 1000;
+  /* position: absolute;  */
+  align-self: center;
+}
+
+.bar1 {
+  /* align-self: start; */
+    transition: all 3s;
+    transition: align-self 2s
+}
+.bar2 {
+  /* align-self: end; */
+  /* background: red; */
+}
+
+.burger {
+  cursor: pointer;
+  /* position: absolute; */
+  z-index: 1000;
+  height: 15px;
+  width: 50px;
+  position: absolute; 
+  /* top: 200px; */
+
+  /* background:red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* top: 1000px; */
+}
+
+.nav {
+  display: flex;
+  padding-left:auto;
+  margin-top: 48px;
+  justify-content: end;
+  padding: 0 30px;
+  /* position: relative; */
+  /* width:100px; */
+/* top: 200px; */
+position: relative;
 }
