@@ -134,18 +134,23 @@ main {
 .jobTitle {
   font-family: Silka-SemiBold;
   font-size: 28px;
-
-
 }
 
 .headers {
+  position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 120px;
+  top: 120px;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   gap: 10px;
 
+  /* display: flex;
+  padding-left: auto;
+  top: 120px;
+  justify-content: end;
+  padding: 0 30px;
+  position: relative; */
 }
 
 .location {
@@ -180,8 +185,8 @@ main {
 
 .bar1 {
   /* align-self: start; */
-    transition: all 3s;
-    transition: align-self 2s
+  transition: all 3s;
+  transition: align-self 2s;
 }
 .bar2 {
   /* align-self: end; */
@@ -194,7 +199,7 @@ main {
   z-index: 1000;
   height: 15px;
   width: 50px;
-  position: absolute; 
+  position: absolute;
   /* top: 200px; */
 
   /* background:red; */
@@ -206,12 +211,9 @@ main {
 
 .nav {
   display: flex;
-  padding-left:auto;
-  margin-top: 48px;
+  padding-left: auto;
+  top: 48px;
   justify-content: end;
   padding: 0 30px;
-  /* position: relative; */
-  /* width:100px; */
-/* top: 200px; */
-position: relative;
+  position: relative;
 }
