@@ -94,9 +94,9 @@ main {
   width: 100vw;
   height: 550px;
   background-image: radial-gradient(
-    farthest-corner at 20% -100%,
+    farthest-corner at 27% -100%,
     #13131300 0%,
-    #131313 55%
+    #131313 56%
   );
   z-index: -2;
   position: absolute;
