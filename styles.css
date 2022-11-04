@@ -171,20 +171,129 @@ main {
 
 .availContainer {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   width: 100vw;
-}
-.availability {
+  overflow: hidden;
   font-family: Silka-Regular;
-  /* font-family: 'Inter', sans-serif; */
   font-weight: 400;
   font-size: 12px;
   margin-top: 48px;
-  /* left: 30%; */
   text-align: center;
-  /* display: inline; */
+  position: absolute;
+  flex-direction: column;
+  /* background-color: red; */
+  height: 15px;
+}
+.availability {
+  font-family: Silka-Regular;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 48px;
+  text-align: center;
   position: absolute;
 }
+
+.rotate {
+  animation-fill-mode: both;
+  display: block;
+  height: 100%;
+  animation-name: spin_word1, spin_word2, spin_word3, spin_word4, spin_word5,
+    spin_word6;
+  animation-delay:  4s, 9s, 14s, 19s, 24s, 29s, 34s;
+  animation-duration: 0.3s; /* same for all */
+  animation-timing-function: ease-out;
+}
+
+@keyframes spin_word1 {
+  to {
+    transform: translateY(-100%);
+  }
+}
+@keyframes spin_word2 {
+  to {
+    transform: translateY(-200%);
+  }
+}
+@keyframes spin_word3 {
+  to {
+    transform: translateY(-300%);
+  }
+}
+@keyframes spin_word4 {
+  to {
+    transform: translateY(-400%);
+  }
+}
+@keyframes spin_word5 {
+  to {
+    transform: translateY(-500%);
+  }
+}
+@keyframes spin_word6 {
+  to {
+    transform: translateY(-600%);
+  }
+}
+/* @keyframes spin_word1 {
+  to {
+    transform: translateY(-112%);
+  }
+}
+@keyframes spin_word2 {
+  to {
+    transform: translateY(-200%);
+  }
+}
+
+@keyframes spin_word3 {
+  to {
+    transform: translateY(-212%);
+  }
+}
+
+50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-312%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-412%);
+  }
+  100% {
+    transform: translateY(-400%);
+  } */
+
+@keyframes spin_words {
+  10% {
+    transform: translateY(-112%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-212%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-312%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-412%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
+
 .bar1,
 .bar2 {
   width: 37px;
