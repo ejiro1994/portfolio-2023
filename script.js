@@ -56,3 +56,23 @@ t1.to('.overlay', {
    }
  )
  })
+
+
+ var scrollable = document.querySelector('.availContainer')
+ scrollable.addEventListener('click', ()=> console.log('scrollable clicked'))
+ scrollable.addEventListener('wheel', preventScroll, {passive: false});
+ scrollable.addEventListener('touchmove', disable, { passive: false })
+
+
+function preventScroll(e){
+    e.preventDefault();
+    e.stopPropagation();
+
+    return false;
+}
+
+setTimeout(() => {
+  // alert('done')
+  document.querySelector('.scrollable').classList.add('disable-scroll');
+}, 2);
+

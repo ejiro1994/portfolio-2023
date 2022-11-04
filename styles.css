@@ -34,6 +34,9 @@ body {
   /* background-image: url(/grid.svg); */
   color: #fff;
   /* font-family: 'silka-Regular'; */
+/* 
+  transitions: none !important;
+  -webkit-backface-visibility: hidden; */
 }
 main {
   height: 100vh;
@@ -174,7 +177,13 @@ main {
   display: flex;
   justify-content: start;
   width: 100vw;
-  overflow: hidden;
+  /* overflow-y: hidden; */
+  overflow-x: hidden;
+overflow-y: ;
+-webkit-overflow-scrolling: touch;
+  -webkit-backface-visibility: hidden;
+  
+  
   font-family: Silka-Regular;
   font-weight: 400;
   font-size: 12px;
@@ -183,16 +192,20 @@ main {
   position: absolute;
   flex-direction: column;
   /* background-color: red; */
-  height: 15px;
+  height: 15px;  -webkit-touch-callout: none; /* iOS Safari */
 }
-.availability {
+
+.disable-scroll{
+  overflow-y: hidden !important;
+}
+/* .availability {
   font-family: Silka-Regular;
   font-weight: 400;
   font-size: 12px;
   margin-top: 48px;
   text-align: center;
   position: absolute;
-}
+} */
 
 .rotate {
   /* animation-fill-mode: both;
@@ -202,7 +215,8 @@ main {
     spin_word6;
   animation-delay:  4s, 9s, 14s, 19s, 24s, 29s, 34s;
   animation-duration: 0.3s; /* same for all */
-  animation-timing-function: ease-out; */
+  animation-timing-function: ease-out; 
+      -webkit-user-select: none; 
 }
 
 @keyframes spin_word1 {
