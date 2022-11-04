@@ -194,14 +194,14 @@ main {
 }
 
 .rotate {
-  animation-fill-mode: both;
+  /* animation-fill-mode: both;
   display: block;
   height: 100%;
   animation-name: spin_word1, spin_word2, spin_word3, spin_word4, spin_word5,
     spin_word6;
   animation-delay:  4s, 9s, 14s, 19s, 24s, 29s, 34s;
   animation-duration: 0.3s; /* same for all */
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-out; */
 }
 
 @keyframes spin_word1 {
