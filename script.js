@@ -32,3 +32,5 @@ t1.to('.overlay', {
   .to('.rotate', { delay: 3.5, transform: 'translateY(-400%)', duration: 0.3 })
   .to('.rotate', { delay: 3.5, transform: 'translateY(-500%)', duration: 0.3 })
   .to('.rotate', { delay: 3.5, transform: 'translateY(-600%)', duration: 0.3 })
+  .to('.cover', { width: 1000 }, 6)
+  .to('.color', {x: '75%', opacity: .5},6)
