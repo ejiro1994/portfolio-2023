@@ -1,11 +1,11 @@
 const overlay = document.querySelector('.overlay')
-// const burger = document.querySelector('.burger')
+const menu = document.getElementById('nav')
 
-// gsap.registerPlugin(ScrollTrigger)
 
+ 
 let t1 = gsap.timeline()
+let t2 = gsap.timeline()
 
-// t1.to('.overlay', { delay: 1.4, duration: 5, top: 1000 })
 
 t1.to('.overlay', {
   delay: 1.4,
@@ -37,9 +37,22 @@ t1.to('.overlay', {
   .to('.rotate', { delay: 3.5, transform: 'translateY(-600%)', duration: 0.3 })
 
   // should be done on scroll
-  .to('.cover', {   backgroundImage: `radial-gradient(
+
+
+
+ menu.addEventListener('click', (e) => {
+   console.log('hello');
+ t2.to(
+   '.cover',
+
+   {
+     backgroundImage: `radial-gradient(
     farthest-corner at 70% -100%,
     #13131300 0%,
     #131313 56%
-  )` }, 6)
-  .to('.color', {x: '75%', opacity: 1, duration:.5},6)
+  )`,
+     duration: .5,
+     ease: 'power3.Out',
+   }
+ )
+ })
