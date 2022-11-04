@@ -47,11 +47,11 @@ main {
   /* background-image: radial-gradient(closest-side, rgba(0, 195, 255, 0.21), rgba(0, 0, 0, 0)); */
   background-image: radial-gradient(
     closest-side,
-    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.03),
     rgba(0, 0, 0, 0)
   );
 
-  position: fixed;
+  position: absolute;
   top: -570px;
   right: 50%;
   /* mix-blend-mode: lighten;  */
@@ -133,7 +133,7 @@ main {
 }
 
 .intro {
-  z-index: 10000;
+  z-index: 1;
   font-family: Silka-ExtraLight;
   font-family: 'Inter', sans-serif;
   font-weight: 200;
