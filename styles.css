@@ -5,23 +5,27 @@
   box-sizing: border-box;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  /* -webkit-text-stroke: 0.2px; */
+  /* -webkit-text-stroke: 0.45px rgba(255, 255, 255, .2); */
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;600&display=swap');
 
 @font-face {
   font-family: silka-Regular;
-  src: url('./fonts/Silka-Regular.otf');
+  src: url('./fonts/Silka-Regular.woff2');
 }
 @font-face {
   font-family: silka-Light;
-  src: url('./fonts/Silka-Light.otf');
+  src: url('./fonts/Silka-Light.woff2');
 }
 @font-face {
   font-family: Silka-ExtraLight;
-  src: url('./fonts/Silka-ExtraLight.otf');
+  src: url('./fonts/Silka-ExtraLight.woff2');
 }
 @font-face {
   font-family: Silka-SemiBold;
-  src: url('./fonts/Silka-SemiBold.otf');
+  src: url('./fonts/Silka-SemiBold.woff2');
 }
 
 body {
@@ -130,11 +134,16 @@ main {
 .intro {
   z-index: 10000;
   font-family: Silka-ExtraLight;
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
   font-size: 15px;
 }
 
 .jobTitle {
   font-family: Silka-SemiBold;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+
   font-size: 28px;
 }
 
@@ -157,6 +166,8 @@ main {
 
 .location {
   font-family: Silka-Light;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
   font-size: 24px;
 }
 
@@ -167,6 +178,8 @@ main {
 }
 .availability {
   font-family: Silka-ExtraLight;
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
   font-size: 12px;
   margin-top: 48px;
   /* left: 30%; */

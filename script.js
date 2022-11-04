@@ -11,8 +11,8 @@ t1.to('.overlay', {
   top: 100000,
   ease: Power2.easeInOut,
 })
-  .to('.bar1', { x: -4 }, 2)
-  .to('.bar2', { x: 4 }, 2)
+  .to('.bar1', { x: 4 }, 2)
+  .to('.bar2', { x: -4 }, 2)
   .fromTo('.headers', { y: 30 }, { y: 0, duration: 1, ease: 'power2.inOut' }, 2)
   .fromTo(
     '.headers',
