@@ -134,6 +134,63 @@ main {
   border-radius: 30px;
 }
 
+/* @media screen and (min-width: 700px) {
+.goldDot {
+  left: 27.7%;
+}
+}
+
+@media screen and (min-width: 1000px) {
+.goldDot {
+  left: 27.8%;
+}
+}
+@media screen and (min-width: 1300px) {
+.goldDot {
+  left: 27.9%;
+}
+}
+@media screen and (min-width: 2000px) {
+.goldDot {
+  left: 28%;
+}
+}
+@media screen and (min-width: 3000px) {
+.goldDot {
+  left: 28.1%;
+}
+} */
+
+
+@media screen and (min-width: 760px) {
+.goldDot {
+  left: 38.3%;
+}
+}
+
+@media screen and (min-width: 1000px) {
+.goldDot {
+  left: 38.5%;
+
+}
+}
+@media screen and (min-width: 1700px) {
+.goldDot {
+  left: 38.6%;
+
+}
+}
+@media screen and (min-width: 1840px) {
+.goldDot {
+  left: 45.3%;
+}
+}
+@media screen and (min-width: 3000px) {
+.goldDot {
+  /* left: 28.1%; */
+}
+}
+
 .intro {
   z-index: 1;
   font-family: Silka-ExtraLight;
