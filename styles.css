@@ -176,13 +176,9 @@ main {
   display: flex;
   justify-content: start;
   width: 100vw;
-  /* overflow-y: hidden; */
-  overflow-x: hidden;
-overflow-y: ;
--webkit-overflow-scrolling: touch;
-  -webkit-backface-visibility: hidden;
-  
-  
+  overflow-y: hidden;
+  /* overflow-x: hidden; */
+
   font-family: Silka-Regular;
   font-weight: 400;
   font-size: 12px;
@@ -191,11 +187,11 @@ overflow-y: ;
   position: absolute;
   flex-direction: column;
   /* background-color: red; */
-  height: 15px;  -webkit-touch-callout: none; /* iOS Safari */
+  height: 15px;  
 }
 
 .disable-scroll{
-  overflow-y: hidden !important;
+  /* overflow-y: hidden !important; */
 }
 /* .availability {
   font-family: Silka-Regular;
@@ -214,99 +210,10 @@ overflow-y: ;
     spin_word6;
   animation-delay:  4s, 9s, 14s, 19s, 24s, 29s, 34s;
   animation-duration: 0.3s; /* same for all */
-  animation-timing-function: ease-out; 
-      -webkit-user-select: none; 
+  /* animation-timing-function: ease-out;  */
+      /* -webkit-user-select: none;  */
 }
 
-@keyframes spin_word1 {
-  to {
-    transform: translateY(-100%);
-  }
-}
-@keyframes spin_word2 {
-  to {
-    transform: translateY(-200%);
-  }
-}
-@keyframes spin_word3 {
-  to {
-    transform: translateY(-300%);
-  }
-}
-@keyframes spin_word4 {
-  to {
-    transform: translateY(-400%);
-  }
-}
-@keyframes spin_word5 {
-  to {
-    transform: translateY(-500%);
-  }
-}
-@keyframes spin_word6 {
-  to {
-    transform: translateY(-600%);
-  }
-}
-/* @keyframes spin_word1 {
-  to {
-    transform: translateY(-112%);
-  }
-}
-@keyframes spin_word2 {
-  to {
-    transform: translateY(-200%);
-  }
-}
-
-@keyframes spin_word3 {
-  to {
-    transform: translateY(-212%);
-  }
-}
-
-50% {
-    transform: translateY(-200%);
-  }
-  60% {
-    transform: translateY(-312%);
-  }
-  75% {
-    transform: translateY(-300%);
-  }
-  85% {
-    transform: translateY(-412%);
-  }
-  100% {
-    transform: translateY(-400%);
-  } */
-
-@keyframes spin_words {
-  10% {
-    transform: translateY(-112%);
-  }
-  25% {
-    transform: translateY(-100%);
-  }
-  35% {
-    transform: translateY(-212%);
-  }
-  50% {
-    transform: translateY(-200%);
-  }
-  60% {
-    transform: translateY(-312%);
-  }
-  75% {
-    transform: translateY(-300%);
-  }
-  85% {
-    transform: translateY(-412%);
-  }
-  100% {
-    transform: translateY(-400%);
-  }
-}
 
 .bar1,
 .bar2 {
