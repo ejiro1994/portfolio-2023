@@ -211,7 +211,8 @@ main {
   animation-delay:  4s, 9s, 14s, 19s, 24s, 29s, 34s;
   animation-duration: 0.3s; /* same for all */
   /* animation-timing-function: ease-out;  */
-      /* -webkit-user-select: none;  */
+      -webkit-user-select: none; 
+      user-select: none;
 }
 
 
