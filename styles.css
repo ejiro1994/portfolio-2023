@@ -28,32 +28,40 @@
   src: url('./fonts/Silka-SemiBold.woff2');
 }
 
+html, body {
+  overflow: hidden;
+   position: relative;
+    height: 100%;
+
+}
+
 body {
   background-color: #131313;
-  overflow: hidden;
   /* background-image: url(/grid.svg); */
   color: #fff;
   /* font-family: 'silka-Regular'; */
   /* 
   transitions: none !important;
   -webkit-backface-visibility: hidden; */
+
 }
 main {
   height: 100vh;
   width: 100vw;
   position: relative;
-  overflowX: hidden;
+  overflowx: hidden;
 }
 
 .goldSplash {
-  width:500px;
-  height: 500px;
-  /* background: red; */
+  width: 600px;
+  height: 600px;
   background: url('./images/goldSplash.webp');
   background-position: center;
+  background-size: cover;
   position: absolute;
-  right:-200px;
+  right: -290px;
   top: 30%;
+  transform: rotate(90deg);
 }
 .color {
   height: 1000px;
@@ -71,7 +79,7 @@ main {
   /* mix-blend-mode: lighten;  */
 }
 .color2 {
-  height: 500px;
+  height: 600px;
   width: 500px;
   background-image: radial-gradient(
     closest-side,
@@ -139,8 +147,9 @@ main {
   top: 51px;
   left: 27.5%;
   z-index: 100;
-  background-image: url('/images/goldBall.png');
-  background-size: cover;
+  /* background-image: url('/images/goldBall.png'); */
+  /* background-size: cover; */
+   background-size: 300px 100px;
   background-position: center;
   position: absolute;
   border-radius: 30px;
@@ -173,34 +182,37 @@ main {
 }
 } */
 
-
 @media screen and (min-width: 760px) {
-.goldDot {
-  left: 38.3%;
-}
+  .goldDot {
+    left: 38.3%;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-.goldDot {
-  left: 38.5%;
-
-}
+  .goldDot {
+    left: 38.5%;
+  }
 }
 @media screen and (min-width: 1700px) {
-.goldDot {
-  left: 38.6%;
-
+  .goldDot {
+    left: 38.6%;
+  }
 }
+@media screen and (min-width: 1790px) {
+  .goldDot {
+    left: 45.2%;
+
+  }
 }
 @media screen and (min-width: 1840px) {
-.goldDot {
-  left: 45.3%;
-}
+  .goldDot {
+    left: 45.3%;
+  }
 }
 @media screen and (min-width: 3000px) {
-.goldDot {
-  /* left: 28.1%; */
-}
+  .goldDot {
+    /* left: 28.1%; */
+  }
 }
 
 .intro {
@@ -330,30 +342,29 @@ main {
   position: relative;
 }
 
-.lineContainer{
-display: flex;
-gap: 20px;
-align-items: center;
-position: absolute;
-transform: rotate(270deg);
-bottom: 0px;
-left: -220px;
---translateX: 0;
---scaleX: 1;
---visibility: visible;
-
+.lineContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  position: absolute;
+  transform: rotate(270deg);
+  bottom: 0px;
+  left: -220px;
+  --translateX: 0;
+  --scaleX: 1;
+  --visibility: visible;
 }
 .verticalLine {
-width: 400px;
-height: 1px;
-background-color: white;
+  width: 400px;
+  height: 1px;
+  background-color: white;
 }
 
 .verticalText {
-font-family: Silka-SemiBold;
-font-weight: 400;
-text-transform: capitalize;
-font-size: 11px;
+  font-family: Silka-SemiBold;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 11px;
 }
 
 /* .lineContainer::after{
@@ -367,20 +378,20 @@ font-size: 11px;
     animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
     transform: translateX(-101%);
 } */
-.lineContainer::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 56%;
-    height: 100%;
-    background: #131313;
-    /* background: red; */
-    transform: translateX(var(--translateX));
-    visibility: var(--visibility);
-    /* transform: scaleX(var(--scaleX)); */
-    /* animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards; */
-    /* transform: translateX(0); */
-    /* transform: scaleX(.8); */
-    /* transform: translate(50px) */
+.lineContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 56%;
+  height: 100%;
+  background: #131313;
+  /* background: red; */
+  transform: translateX(var(--translateX));
+  visibility: var(--visibility);
+  /* transform: scaleX(var(--scaleX)); */
+  /* animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards; */
+  /* transform: translateX(0); */
+  /* transform: scaleX(.8); */
+  /* transform: translate(50px) */
 }

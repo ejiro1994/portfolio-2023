@@ -84,4 +84,4 @@ menu.addEventListener('click', (e) => {
 })
 
 
-t3.to('.goldSplash', { rotation: 1000, duration: 740 }, 1)
+t3.to('.goldSplash', { rotation: -360, duration: 80, repeat: -1, ease: 'none' }, 1)
