@@ -1,3 +1,15 @@
+// var options = {
+//   animate: true,
+//   patternWidth: 100,
+//   patternHeight: 100,
+//   grainOpacity: 0.05,
+//   grainDensity: 1,
+//   grainWidth: 1,
+//   grainHeight: 1,
+// }
+
+// grained('#grained', options)
+
 const overlay = document.querySelector('.overlay')
 // const burger = document.querySelector('.burger')
 
@@ -5,15 +17,18 @@ const overlay = document.querySelector('.overlay')
 
 let t1 = gsap.timeline()
 let t2 = gsap.timeline()
+let t3 = gsap.timeline()
 
 // t1.to('.overlay', { delay: 1.4, duration: 5, top: 1000 })
 
-t1.to('.overlay', {
-  delay: 1.4,
-  duration: 5,
-  top: 100000,
-  ease: Power2.easeInOut,
-})
+t1
+
+  .to('.overlay', {
+    delay: 1.4,
+    duration: 5,
+    top: 100000,
+    ease: Power2.easeInOut,
+  })
   .to('.overlay', { display: 'none' }, 3)
   .to('.bar1', { x: 4 }, 2)
   .to('.bar2', { x: -4 }, 2)
@@ -39,16 +54,13 @@ t1.to('.overlay', {
   .to(
     '.lineContainer',
     {
-      duration: .4,
+      duration: 0.4,
       '--translateX': '100%',
       ease: 'power4.Out',
     },
     2.7
   )
   .to('.lineContainer', { '--visibility': 'hidden' }, '>.1')
-
-
-
 
 // should be done on scroll
 
@@ -70,3 +82,6 @@ menu.addEventListener('click', (e) => {
     }
   )
 })
+
+
+t3.to('.goldSplash', { rotation: 1000, duration: 740 }, 1)
