@@ -85,3 +85,7 @@ menu.addEventListener('click', (e) => {
 
 
 t3.to('.goldSplash', { rotation: -360, duration: 80, repeat: -1, ease: 'none' }, 1)
+
+
+var now = new Date()
+console.log(now)
