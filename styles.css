@@ -397,9 +397,16 @@ main {
   /* transform: translate(50px) */
 }
 
-/* 
+
 .cirleText {
-   border-radius: 50px;
-   border: solid 1px rgba(255, 255, 255, 0.2);
-  padding:6px 15px;
-} */
+  /* display: none; */
+
+}
+
+.headshot {
+  height: 50px;
+  width: 50px;
+  background: url('/images/headshot-ejiro.PNG');
+  background-size: cover;
+  border-radius: 100px;
+}

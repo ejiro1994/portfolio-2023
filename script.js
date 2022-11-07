@@ -89,3 +89,12 @@ t3.to('.goldSplash', { rotation: -360, duration: 80, repeat: -1, ease: 'none' },
 
 var now = new Date()
 console.log(now)
+
+const timeLocal = document.querySelector('.timeLocal')
+let options = {
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}
+timeLocal.innerHTML = now.toLocaleDateString('en-US', options)
