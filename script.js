@@ -80,27 +80,55 @@ menu.addEventListener('click', (e) => {
     }
   )
     .to('.menuDropdown', { y: '-100vh', duration: 0.6, ease: 'circ.easeInOut' })
+
+    //   .fromTo(
+    //     ['.menuOverlay', '.grid2'],
+    //     {
+    //       backgroundImage: `radial-gradient(
+    //   farthest-corner at 0% 150%,
+    //   #13131300 0%,
+    //   #131313 0%
+    // )`,
+    // height: 0
+    //     },
+    //     {
+    //       backgroundImage: `radial-gradient(
+    //   farthest-corner at -20% 150%,
+    //   #13131300 0%,
+    //   #131313 59%
+    // )`,
+    // height: 550,
+    // duration: 1,
+    // ease: 'circ.easeInOut',
+
+    //     }
+
+    //   )
+
     .fromTo(
       ['.menuOverlay', '.grid2'],
       {
         backgroundImage: `radial-gradient(
-    farthest-corner at 0% 150%,
+    farthest-corner at 250% 160%,
     #13131300 0%,
-    #131313 0%
+    #131313 26%
   )`,
-  height: 0
       },
       {
         backgroundImage: `radial-gradient(
-    farthest-corner at -50% 150%,
+    farthest-corner at -20% 160%,
     #13131300 0%,
-    #131313 59%
+    #131313 56%
   )`,
-  height: 550,
-  duration: 1,
-  ease: 'circ.easeInOut',
- 
+        duration: 2.5,
+        ease: 'slow(0.7, 0.7, false)',
       }
+    )
+
+    .fromTo(
+      '.grid2',
+      { height: 350 },
+      { height: 450, ease: 'power2.inOut' ,duration: 2.7  } , '>-2.5'
       
     )
 })
