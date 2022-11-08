@@ -120,6 +120,7 @@ main {
   stroke-width: 1;
 }
 
+
 .cover {
   width: 100vw;
   height: 550px;
@@ -441,4 +442,31 @@ main {
   top: 100vh;
   left: 0;
   z-index: 999;
+}
+.menuOverlay {
+    width: 100vw;
+  height: 550px;
+  /* background-image: radial-gradient(
+    farthest-corner at 100% 150%,
+    #13131300 0%,
+    #131313 59%
+  ); */
+  z-index: -2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.grid2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 550px;
+  width: 100vw;
+  z-index: -5;
+
+  fill: none;
+  stroke: #fff;
+  stroke-opacity: 0.4;
+  stroke-width: 1;
 }

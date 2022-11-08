@@ -21,14 +21,12 @@ let t3 = gsap.timeline()
 
 // t1.to('.overlay', { delay: 1.4, duration: 5, top: 1000 })
 
-t1
-
-  .to('.overlay', {
-    delay: 1.4,
-    duration: 1.4,
-    top: '100vh',
-    ease: 'circ.inOut',
-  })
+t1.to('.overlay', {
+  delay: 1.4,
+  duration: 1.4,
+  top: '100vh',
+  ease: 'circ.inOut',
+})
   .to('.overlay', { display: 'none' }, 2.8)
   .to('.bar1', { x: 4 }, 2)
   .to('.bar2', { x: -4 }, 2)
@@ -80,12 +78,36 @@ menu.addEventListener('click', (e) => {
       duration: 0.5,
       ease: 'power3.Out',
     }
-  ).to('.menuDropdown', {y: '-100vh', duration: 0.6, ease: 'circ.easeInOut'})
+  )
+    .to('.menuDropdown', { y: '-100vh', duration: 0.6, ease: 'circ.easeInOut' })
+    .fromTo(
+      '.menuOverlay',
+      {
+        backgroundImage: `radial-gradient(
+    farthest-corner at 100% 150%,
+    #13131300 0%,
+    #131313 0%
+  )`,
+      },
+      {
+        backgroundImage: `radial-gradient(
+    farthest-corner at 0% 150%,
+    #13131300 0%,
+    #131313 59%
+  )`,
+  duration: 1,
+  ease: 'circ.easeInOut',
+ 
+      }
+      
+    )
 })
 
-
-t3.to('.goldSplash', { rotation: -360, duration: 80, repeat: -1, ease: 'none' }, 1)
-
+t3.to(
+  '.goldSplash',
+  { rotation: -360, duration: 80, repeat: -1, ease: 'none' },
+  1
+)
 
 var now = new Date()
 console.log(now)
