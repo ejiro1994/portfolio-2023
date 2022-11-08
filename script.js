@@ -25,9 +25,9 @@ t1
 
   .to('.overlay', {
     delay: 1.4,
-    duration: 1.4,
+    duration: 1.5,
     top: '100vh',
-    ease: Power3.easeIn,
+    ease: Power2.easeInOut,
   })
   .to('.overlay', { display: 'none' }, 2.8)
   .to('.bar1', { x: 4 }, 2)
