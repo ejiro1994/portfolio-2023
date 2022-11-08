@@ -81,13 +81,14 @@ menu.addEventListener('click', (e) => {
   )
     .to('.menuDropdown', { y: '-100vh', duration: 0.6, ease: 'circ.easeInOut' })
     .fromTo(
-      '.menuOverlay',
+      ['.menuOverlay', '.grid2'],
       {
         backgroundImage: `radial-gradient(
     farthest-corner at 100% 150%,
     #13131300 0%,
     #131313 0%
   )`,
+  height: 0
       },
       {
         backgroundImage: `radial-gradient(
@@ -95,6 +96,7 @@ menu.addEventListener('click', (e) => {
     #13131300 0%,
     #131313 59%
   )`,
+  height: 550,
   duration: 1,
   ease: 'circ.easeInOut',
  
