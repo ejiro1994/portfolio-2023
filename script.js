@@ -97,4 +97,4 @@ let options = {
   month: 'long',
   day: 'numeric',
 }
-timeLocal.innerHTML = now.toLocaleDateString('en-US', options)
+timeLocal.innerHTML = now.toLocaleDateString('en-US', options).replace(/,/g, '')

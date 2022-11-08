@@ -28,8 +28,8 @@
   src: url('./fonts/Silka-SemiBold.woff2');
 }
 
-html, body {
-  overflow: hidden;
+html {
+  overflow-x: hidden;
    position: relative;
     height: 100%;
 
@@ -49,7 +49,9 @@ main {
   height: 100vh;
   width: 100vw;
   position: relative;
-  overflowx: hidden;
+  overflow-x: hidden;
+  /* touch-action: none;
+-ms-touch-action: none; */
 }
 
 .goldSplash {
@@ -230,13 +232,14 @@ main {
 }
 
 .headers {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   top: 163px;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  align-self: center;
 
   /* display: flex;
   padding-left: auto;
@@ -339,7 +342,8 @@ main {
   top: 48px;
   justify-content: end;
   padding: 0 30px;
-  position: relative;
+  position: sticky;
+  z-index: 110000;
 }
 
 .lineContainer {
@@ -409,4 +413,21 @@ main {
   background: url('/images/headshot-ejiro.PNG');
   background-size: cover;
   border-radius: 100px;
+}
+
+.section1 {
+  width: 100vw;
+  height: 500px;
+  background: #131313;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.hero {
+  height: 100vh;
+  width: 100vw;
 }
