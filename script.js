@@ -25,9 +25,9 @@ t1
 
   .to('.overlay', {
     delay: 1.4,
-    duration: 1.5,
+    duration: 1.4,
     top: '100vh',
-    ease: Power2.easeInOut,
+    ease: 'circ.inOut',
   })
   .to('.overlay', { display: 'none' }, 2.8)
   .to('.bar1', { x: 4 }, 2)
@@ -80,7 +80,7 @@ menu.addEventListener('click', (e) => {
       duration: 0.5,
       ease: 'power3.Out',
     }
-  )
+  ).to('.menuDropdown', {y: '-100vh', duration: 0.6, ease: 'circ.easeInOut'})
 })
 
 
