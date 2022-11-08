@@ -128,7 +128,7 @@ menu.addEventListener('click', (e) => {
     .fromTo(
       '.grid2',
       { height: 350 },
-      { height: 450, ease: 'power2.inOut' ,duration: 2.7  } , '>-2.5'
+      { height: 450, ease: 'power2.inOut' ,duration: 2.6  } , '>-2.5'
       
     )
 })
