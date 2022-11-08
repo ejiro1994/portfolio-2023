@@ -84,7 +84,7 @@ menu.addEventListener('click', (e) => {
       ['.menuOverlay', '.grid2'],
       {
         backgroundImage: `radial-gradient(
-    farthest-corner at 100% 150%,
+    farthest-corner at 0% 150%,
     #13131300 0%,
     #131313 0%
   )`,
@@ -92,7 +92,7 @@ menu.addEventListener('click', (e) => {
       },
       {
         backgroundImage: `radial-gradient(
-    farthest-corner at 0% 150%,
+    farthest-corner at -50% 150%,
     #13131300 0%,
     #131313 59%
   )`,
