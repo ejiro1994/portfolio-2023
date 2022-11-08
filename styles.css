@@ -50,6 +50,7 @@ main {
   width: 100vw;
   position: relative;
   overflow-x: hidden;
+  color: rgba(255, 255, 255, 0.9);
   /* touch-action: none;
 -ms-touch-action: none; */
 }
@@ -352,14 +353,14 @@ main {
   align-items: center;
   position: absolute;
   transform: rotate(270deg);
-  bottom: 0px;
-  left: -220px;
+  bottom: 100px;
+  left: -100px;
   --translateX: 0;
   --scaleX: 1;
   --visibility: visible;
 }
 .verticalLine {
-  width: 400px;
+  width: 200px;
   height: 1px;
   background-color: white;
 }
@@ -387,7 +388,7 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  width: 56%;
+  width: 100%;
   height: 100%;
   background: #131313;
   /* background: red; */

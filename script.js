@@ -25,11 +25,11 @@ t1
 
   .to('.overlay', {
     delay: 1.4,
-    duration: 5,
-    top: 100000,
-    ease: Power2.easeInOut,
+    duration: 1.4,
+    top: '100vh',
+    ease: Power3.easeIn,
   })
-  .to('.overlay', { display: 'none' }, 3)
+  .to('.overlay', { display: 'none' }, 2.8)
   .to('.bar1', { x: 4 }, 2)
   .to('.bar2', { x: -4 }, 2)
   .fromTo('.headers', { y: 30 }, { y: 0, duration: 1, ease: 'power2.inOut' }, 2)
